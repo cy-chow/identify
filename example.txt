@@ -3,3 +3,5 @@ b
 c
 d
 int x[]
+int (*x)[]
+void x(int,int*)
