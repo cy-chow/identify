@@ -1,4 +1,5 @@
 from definition import * 
+from proofread import proofread
 
 def identify(lines):
   """
@@ -19,7 +20,7 @@ def identify(lines):
           pass
         # Identify functions
         elif line[end] == '(':
-          ans += 'function '
+          ans += 'a function '
           end += 1
           if line[end] != ')':
             ans += 'taking '
@@ -64,10 +65,3 @@ def identify(lines):
           '(make sure your declaration includes ' + identifier + ')')
     except KeyError:
       print('Invalid data type used')
-
-def proofread(line):
-  print(line + ':', end = ' ')
-  for datatype in type_dict:
-    line = line.replace(datatype, type_dict[datatype])
-  line = line.replace(' ', '')
-  return line

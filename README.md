@@ -26,9 +26,9 @@ to get started.</p>
 `long x: x is long`  
 `char x[]: x is an array of char`  
 `int (*x)[]: x is pointer to an array of int`  
-`void x(long,int*): x is function taking long and int pointer returning void`  
-`int (*(*x)[])(): x is pointer to an array of pointer to function returning int`  
-`int (*x[])(): x is an array of pointer to function returning int`  
+`void x(long,int*): x is a function taking long and int pointer returning void`  
+`int (*(*x)[])(): x is pointer to an array of pointer to a function returning int`  
+`int (*x[])(): x is an array of pointer to a function returning int`  
 `long (*x())[256]: x is function returning pointer to an array of size 256 of long`  
 
 ## Notes 
