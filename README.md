@@ -1,4 +1,4 @@
-# Identify 
+# IdentiPy 
 This program accepts C declarations that the user inputs to the command line 
 or inside a file and translates them to plain English.
 My primary reference for C declarations can be found [here](https://parrt.cs.usfca.edu/doc/how-to-read-C-declarations.html). 
