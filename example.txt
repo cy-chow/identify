@@ -1,7 +1,8 @@
-a
-b
-c
-d
-int x[]
+short x
+long x
+char x[]
 int (*x)[]
-void x(int,int*)
+void x(long,int*)
+int (*(*x)[])()
+int (*x[])()
+long (*x())[256]
