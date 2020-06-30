@@ -25,6 +25,7 @@ def identify(lines):
           if line[end] != ')':
             ans += 'taking '
             while line[end] != ')':
+            # Identify the parameters of the function
               if line[end] == ',':
                 ans += 'and '
               elif line[end] == '*':
@@ -32,10 +33,7 @@ def identify(lines):
               else:
                 ans += inv_dict[line[end]] + ' '
               end += 1
-
-            # Identify the parameters of the function
-            while line[end] != ')':
-              end += 1
+          end += 1
           ans += 'returning '
         # Identify arrays
         elif line[end] == '[':
@@ -47,17 +45,24 @@ def identify(lines):
               ans += line[end]
               end += 1
             ans += ' of '
-        
+          end += 1
         # Check start index
         if start <= 0:
           pass
         # Identify pointers
         elif line[start] == '*':
           ans += 'pointer to '
+          start -= 1
         
         # Move start and end indices outward
-        start -= 1
-        end += 1
+        """
+        if start <= 0 or end >= len(line):
+          start -= 1
+          end += 1
+        """
+        if line[start] == '(' and line[end] == ')':
+          start -= 1
+          end += 1
       print(ans + inv_dict[line[0]])
     
     except ValueError: 

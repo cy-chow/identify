@@ -1,8 +1,10 @@
 short x
-long x
+long* x
+int ** x
 char x[]
 int (*x)[]
 void x(long,int*)
 int (*(*x)[])()
 int (*x[])()
 long (*x())[256]
+int (*(*x))[]

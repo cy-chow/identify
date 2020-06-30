@@ -13,23 +13,27 @@ to get started.</p>
 ### Input
 *example.txt*:
   1. short x                                                                          
-  2. long x                                                                           
-  3. char x[]                                                                         
-  4. int (\*x)[]                                                                       
-  5. void x(long,int\*)                                                                
-  6. int (\*(\*x)[])() 
-  7. int (\*x[])()                                                                     
-  8. long (\*x())[256]
+  2. long\* x
+  3. int \*\* x
+  4. char x[]                                                                         
+  5. int (\*x)[]                                                                       
+  6. void x(long,int\*)                                                                
+  7. int (\*(\*x)[])() 
+  8. int (\*x[])()                                                                     
+  9. long (\*x())[256]
+  10. int (\*(\*x))[]  
 
 ### Output:
 `short x: x is short`  
-`long x: x is long`  
+`long* x: x is pointer to long`
+`int ** x: x is pointer to pointer to int`
 `char x[]: x is an array of char`  
 `int (*x)[]: x is pointer to an array of int`  
 `void x(long,int*): x is a function taking long and int pointer returning void`  
 `int (*(*x)[])(): x is pointer to an array of pointer to a function returning int`  
 `int (*x[])(): x is an array of pointer to a function returning int`  
 `long (*x())[256]: x is function returning pointer to an array of size 256 of long`  
+`int (*(*x))[]: x is pointer to pointer to an array of int`
 
 ## Notes 
  - This program does not handle unsigned data type declarations.
