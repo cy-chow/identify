@@ -32,7 +32,7 @@ to get started.</p>
 `void x(long,int*): x is a function taking long and int pointer returning void`  
 `int (*(*x)[])(): x is pointer to an array of pointer to a function returning int`  
 `int (*x[])(): x is an array of pointer to a function returning int`  
-`long (*x())[256]: x is function returning pointer to an array of size 256 of long`  
+`long (*x())[256]: x is a function returning pointer to an array of size 256 of long`  
 `int (*(*x))[]: x is pointer to pointer to an array of int`
 
 ## Notes 
