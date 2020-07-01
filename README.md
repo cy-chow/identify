@@ -33,8 +33,6 @@ to get started.</p>
 `int (*(*x)[])(): x is pointer to an array of pointer to a function returning int`  
 `int (*x[])(): x is an array of pointer to a function returning int`  
 `long (*x())[256]: x is a function returning pointer to an array of size 256 of long`  
-`int (*(*x))[]: x is pointer to pointer to an array of int`
-`long (*x())[256]: x is a function returning pointer to an array of size 256 of long`  
 `int (*(*x))[]: x is pointer to pointer to an array of int`  
 
 ## Notes 
