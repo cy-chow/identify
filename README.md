@@ -36,6 +36,6 @@ to get started.</p>
 `int (*(*x))[]: x is pointer to pointer to an array of int`  
 
 ## Notes 
- - This program does not handle unsigned data type declarations.
- - The identifier for the declaration must be *x*, but you can change this in *definition.txt*
+ - This program does not yet handle unsigned data type declarations.
+ - The identifier for the declaration must be *x*, but you can change this in *definition.py*
  - *example.txt* provides sample C declarations to parse.
