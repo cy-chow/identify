@@ -1,7 +1,7 @@
 from definition import * 
 from proofread import proofread
 
-def identify(lines):
+def identify(lines, identifier = DEFAULT_IDENTIFIER):
   """
   This function evaluates a list of C declaration strings 
   and prints the result.

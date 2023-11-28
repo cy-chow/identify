@@ -1,5 +1,4 @@
-# change the value of identifier if you want to use a different name
-identifier = 'x'
+DEFAULT_IDENTIFIER = 'x'
 
 type_dict = { 
   'char': 'C',

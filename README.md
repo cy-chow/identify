@@ -2,11 +2,16 @@
 This program accepts C declarations that the user inputs to the command line 
 or inside a file and translates them to plain English.
 My primary reference for C declarations can be found [here](https://parrt.cs.usfca.edu/doc/how-to-read-C-declarations.html). 
-<p>Try running
+
+Try running
     
     python3 main.py
 
-to get started.</p>
+to get started. To run the script for a file input of newline-separated declarations, run
+
+```
+python3 main.py -f <filename>.txt
+```
 
 ## Example Output
 
@@ -37,5 +42,6 @@ to get started.</p>
 
 ## Notes 
  - This program does not yet handle unsigned data type declarations.
- - The identifier for the declaration must be *x*, but you can change this in *definition.py*
+ - The identifier (variable name) for the declaration is *x*, which can be manually changed
+   in *definition.py* or with the '-i' flag
  - *example.txt* provides sample C declarations to parse.
